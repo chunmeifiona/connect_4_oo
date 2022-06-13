@@ -2,22 +2,34 @@
 
 <head>
   <title>Connect 4</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+    integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
   <link href="connect4.css" rel="stylesheet">
 </head>
 
 <body>
+  <h1 class="text-center text-success">Let's Play Connect Four Game!</h1>
   <div>
-    <input type="text" id="p1color" placeholder="input player 1's color">
-    <input type="text" id="p2color" placeholder="input player 2's color">
-    <button id="start">Start Game!</button>
-  </div>
+    <div class="input-group">
+      <div class="input-group-prepend">
+        <span class="input-group-text">Input Player's Color</span>
+      </div>
+      <input type="text" id="p1color" placeholder="player 1">
+      <input type="text" id="p2color" placeholder="player 2">
+      <button type="button" id="start" class="btn btn-success">Start Game!</button>
+    </div>
 
-  <div id="game">
-    <table id="board"></table>
+    <div id="game">
+      <table id="board"></table>
+    </div>
   </div>
-
   <script src="connect4.js"></script>
-
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>

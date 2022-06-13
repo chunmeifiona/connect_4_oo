@@ -16,10 +16,12 @@ class Game {
     this.makeBoard();
     this.makeHtmlBoard();
     this.currPlayer = p1;
+    //this.gameOver = false;
 
   }
   makeBoard() {
     this.board = [];
+    board.innerHTML = '';//remove old game and restart new game
     for (let y = 0; y < this.height; y++) {
       this.board.push(Array.from({ length: this.width }));
     }
@@ -103,7 +105,8 @@ class Game {
 
     // check for win
     if (this.checkForWin()) {
-      return this.endGame(`Player ${this.currPlayer} won!`);
+      //this.gameOver = true;
+      return this.endGame(`Player ${this.currPlayer.color} won!`);
     }
 
     // check for tie
