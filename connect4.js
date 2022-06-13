@@ -148,5 +148,8 @@ class Game {
     }
   }
 }
+const start = document.getElementById("start");
+start.addEventListener('click', () => {
+  new Game(HEIGHT, WIDTH);
+});
 
-new Game(HEIGHT, WIDTH);
